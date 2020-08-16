@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <title>item</title>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://www.choiceagedcare.com.au/wp-content/uploads/2019/06/medical-background.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body class="bg">
+
+<h3></h3>
+<h3 style="text-align:center">Insert Item</h3>
+<div style="width:65%;margin-left: 220px">
+  <form action="prathitem_insert.php" method="post" style="margin:50">
+    <label for="item_id">Item Id</label>
+    <input type="text" id="item_id" name="Item_Id" placeholder="Item Id">
+
+    
+    <label for="item_name">Item Name</label>
+    <input type="text" id="item_name" name="Item_Name" placeholder="Item Name">
+
+    <label for="item_costprice">Item Costprice</label>
+    <input type="text" id="item_costprice" name="Item_Costprice" placeholder="Item Costprice">
+    
+    <label for="item_saleprice">Item Saleprice</label>
+    <input type="text" id="item_saleprice" name="Item_Saleprice" placeholder="Item Saleprice">
+    <label for="vendor_id">Vendor Id</label>
+    <input type="text" id="vendor_id" name="Vendor_Id" placeholder="Vendor Id">
+    <label for="vendor_id">Item Quantity</label>
+    <input type="text" id="item_quantity" name="item_quantity" placeholder="Item quantity">
+  
+    <input type="submit" value="Submit" style="width:20%;background-color:#ffb26d">
+  </form>
+</div>

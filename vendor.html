@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <title>Vendor</title>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+    .bg {
+  /* The image used */
+  background-image: url("https://image.freepik.com/free-vector/abstract-blue-background-with-medical-elements-health-care-concept_1302-5643.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+<body class="bg">
+
+
+<div style="width:60%;margin-left: 250px;margin-top:140px">
+   <h3>Insert New Vendor</h3>
+  <form action="vendor_insert.php" method="POST" style="width:75%">
+    <label for="vendor_id">Vendor Id</label>
+    <input type="text" id="vendor_id" name="Vendor_Id" placeholder="Vendor Id">
+
+    <label for="vendor_name">Vendor Name</label>
+    <input type="text" id="vendor_name" name="Vendor_Name" placeholder="Vendor Name">
+
+    <label for="vmobile_no">Vendor MobileNo</label>
+    <input type="text" id="vmobile_no" name="Vendor_MobileNo" placeholder="Vendor MobileNo">
+    
+    <label for="vaddress">Vendor Address</label>
+    <input type="text" id="vaddress" name="Vendor_Address" placeholder="Vendor Address">
+  
+    <input type="submit" value="Submit" style="width:15% ;background-color: #c4864a">
+  </form>
+</div>
+
+</body>
+</html>
